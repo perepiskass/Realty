@@ -27,7 +27,7 @@ add_executable(rclst ${CMAKE_SOURCE_DIR}/source/rclst.cpp ${CMAKE_SOURCE_DIR}/so
 add_executable(rclss ${CMAKE_SOURCE_DIR}/source/rclss.cpp ${CMAKE_SOURCE_DIR}/source/arg_rclss.cpp)
 
 add_library(versionlib ${CMAKE_SOURCE_DIR}/source/version_lib.cpp)
-add_executable(gtest  ${CMAKE_SOURCE_DIR}/source/gtest.cpp)
+add_executable(gtest ${CMAKE_SOURCE_DIR}/source/gtest.cpp)
 
 
 set_target_properties(rclst rclss versionlib gtest PROPERTIES
