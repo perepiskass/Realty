@@ -114,5 +114,5 @@ include(CPack)
 
 enable_testing()
 
-add_test(version_test_case ${CMAKE_PROJECT_NAME})
-add_test(utility_test_case ${CMAKE_PROJECT_NAME})
+add_test(version_test_case gtest)
+add_test(utility_test_case gtest)
