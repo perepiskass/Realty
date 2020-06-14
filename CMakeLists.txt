@@ -114,5 +114,5 @@ include(CPack)
 
 enable_testing()
 
-add_test(version_test_case ./build/gtest)
-add_test(utility_test_case ./build/gtest)
+add_test(version_test_case gtest)
+add_test(utility_test_case gtest)
