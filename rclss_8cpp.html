@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>REALTY: Файл source/rclss.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">REALTY
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл rclss.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;boost/filesystem.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="utility_8h_source.html">utility.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для rclss.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="rclss_8cpp__incl.png" border="0" usemap="#source_2rclss_8cpp" alt=""/></div>
+<map name="source_2rclss_8cpp" id="source_2rclss_8cpp">
+<area shape="rect" id="node4" href="utility_8h.html" title="utility.h" alt="" coords="309,80,379,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa0da6c09a5cbbbd60969cef35dd9af4d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rclss_8cpp.html#aa0da6c09a5cbbbd60969cef35dd9af4d">checkArg</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:aa0da6c09a5cbbbd60969cef35dd9af4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проверки введенных аргументов программы колличества классов и имя файла для хранения классификатора.  <a href="#aa0da6c09a5cbbbd60969cef35dd9af4d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa0da6c09a5cbbbd60969cef35dd9af4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aa0da6c09a5cbbbd60969cef35dd9af4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0da6c09a5cbbbd60969cef35dd9af4d">&#9670;&nbsp;</a></span>checkArg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string checkArg </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для проверки введенных аргументов программы колличества классов и имя файла для хранения классификатора. </p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="rclss_8cpp_aa0da6c09a5cbbbd60969cef35dd9af4d_icgraph.png" border="0" usemap="#rclss_8cpp_aa0da6c09a5cbbbd60969cef35dd9af4d_icgraph" alt=""/></div>
+<map name="rclss_8cpp_aa0da6c09a5cbbbd60969cef35dd9af4d_icgraph" id="rclss_8cpp_aa0da6c09a5cbbbd60969cef35dd9af4d_icgraph">
+<area shape="rect" id="node2" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="136,5,191,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="rclss_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph.png" border="0" usemap="#rclss_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" alt=""/></div>
+<map name="rclss_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph" id="rclss_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph">
+<area shape="rect" id="node2" href="rclss_8cpp.html#aa0da6c09a5cbbbd60969cef35dd9af4d" title="Функция для проверки введенных аргументов программы колличества классов и имя файла для хранения клас..." alt="" coords="124,5,207,32"/>
+<area shape="rect" id="node3" href="utility_8h.html#ac8db8c96be81f12cf9be8115fafb1ee2" title="split_data" alt="" coords="122,56,209,83"/>
+<area shape="rect" id="node5" href="namespacenormolize.html#a491781729aa8848cf69a1bfca2d4a7b6" title="normolize::convert\l_to_sample" alt="" coords="271,99,415,141"/>
+<area shape="rect" id="node7" href="utility_8h.html#a7bf5c07e8b12ed97d361654c40292bd2" title="provide_result" alt="" coords="108,161,223,188"/>
+<area shape="rect" id="node4" href="namespacenormolize.html#a57859d3e7a98243da55df3e88d56a0ab" title="normolize::replace\l_missed_data" alt="" coords="271,34,414,75"/>
+<area shape="rect" id="node6" href="namespacenormolize.html#ae97b627622911dcdc43eb1d4ffe5b7a9" title="normolize::norm" alt="" coords="463,107,592,133"/>
+<area shape="rect" id="node8" href="utility_8h.html#a423f8df7cfdf8077af902ed9c589d625" title="get_distance" alt="" coords="290,165,395,192"/>
+<area shape="rect" id="node9" href="utility_8h.html#a68cb9f66b729e9ba8553b5392955f7e2" title="convert_to_string" alt="" coords="275,216,410,243"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

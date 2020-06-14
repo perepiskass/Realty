@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>REALTY: Файл include/utility.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">REALTY
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл utility.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;regex&gt;</code><br />
+<code>#include &lt;dlib/clustering.h&gt;</code><br />
+<code>#include &lt;dlib/rand.h&gt;</code><br />
+<code>#include &lt;dlib/svm_threaded.h&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для utility.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h__incl.png" border="0" usemap="#include_2utility_8h" alt=""/></div>
+<map name="include_2utility_8h" id="include_2utility_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h__dep__incl.png" border="0" usemap="#include_2utility_8hdep" alt=""/></div>
+<map name="include_2utility_8hdep" id="include_2utility_8hdep">
+<area shape="rect" id="node2" href="gtest_8cpp.html" title="source/gtest.cpp" alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node3" href="rclss_8cpp.html" title="source/rclss.cpp" alt="" coords="159,80,285,107"/>
+<area shape="rect" id="node4" href="rclst_8cpp.html" title="source/rclst.cpp" alt="" coords="309,80,433,107"/>
+</map>
+</div>
+</div>
+<p><a href="utility_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnormolize_1_1max.html">normolize::max</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnormolize_1_1min.html">normolize::min</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacenormolize"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenormolize.html">normolize</a></td></tr>
+<tr class="memdesc:namespacenormolize"><td class="mdescLeft">&#160;</td><td class="mdescRight">The most basic kernel is the linear_kernel which is simply a normal dot product. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:aa3981fb82d176914272675f6ee50f973"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> = matrix&lt; double, 7, 1 &gt;</td></tr>
+<tr class="separator:aa3981fb82d176914272675f6ee50f973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15148e3699896437d892107faa81997"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> = matrix&lt; double, 8, 1 &gt;</td></tr>
+<tr class="separator:aa15148e3699896437d892107faa81997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada7d4f289bd49c35f91ecacbd11c8c20"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#ada7d4f289bd49c35f91ecacbd11c8c20">ovo_trainer</a> = one_vs_one_trainer&lt; any_trainer&lt; <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &gt; &gt;</td></tr>
+<tr class="separator:ada7d4f289bd49c35f91ecacbd11c8c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4189cbb5fcaa595a01a6506205b4392"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#af4189cbb5fcaa595a01a6506205b4392">poly_kernel</a> = polynomial_kernel&lt; <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &gt;</td></tr>
+<tr class="separator:af4189cbb5fcaa595a01a6506205b4392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51aa69abfee814389a8923c0477065ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a51aa69abfee814389a8923c0477065ea">rbf_kernel</a> = radial_basis_kernel&lt; <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &gt;</td></tr>
+<tr class="separator:a51aa69abfee814389a8923c0477065ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45a56dc0744468fbd79dd26caabdbfb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#aa45a56dc0744468fbd79dd26caabdbfb">linear_kernel_t</a> = linear_kernel&lt; <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &gt;</td></tr>
+<tr class="separator:aa45a56dc0744468fbd79dd26caabdbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a57859d3e7a98243da55df3e88d56a0ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenormolize.html#a57859d3e7a98243da55df3e88d56a0ab">normolize::replace_missed_data</a> (size_t i, double val)</td></tr>
+<tr class="separator:a57859d3e7a98243da55df3e88d56a0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97b627622911dcdc43eb1d4ffe5b7a9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenormolize.html#ae97b627622911dcdc43eb1d4ffe5b7a9">normolize::norm</a> (const double min, const double max, double val)</td></tr>
+<tr class="separator:ae97b627622911dcdc43eb1d4ffe5b7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a491781729aa8848cf69a1bfca2d4a7b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenormolize.html#a491781729aa8848cf69a1bfca2d4a7b6">normolize::convert_to_sample</a> (const <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &amp;f)</td></tr>
+<tr class="separator:a491781729aa8848cf69a1bfca2d4a7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8db8c96be81f12cf9be8115fafb1ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#ac8db8c96be81f12cf9be8115fafb1ee2">split_data</a> (const std::string &amp;str)</td></tr>
+<tr class="separator:ac8db8c96be81f12cf9be8115fafb1ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423f8df7cfdf8077af902ed9c589d625"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a423f8df7cfdf8077af902ed9c589d625">get_distance</a> (const <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &amp;lv, const <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &amp;rv)</td></tr>
+<tr class="separator:a423f8df7cfdf8077af902ed9c589d625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68cb9f66b729e9ba8553b5392955f7e2"><td class="memTemplParams" colspan="2">template&lt;typename ST &gt; </td></tr>
+<tr class="memitem:a68cb9f66b729e9ba8553b5392955f7e2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; ST, <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &gt;::value||std::is_same&lt; ST, <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &gt;::value, std::string &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="utility_8h.html#a68cb9f66b729e9ba8553b5392955f7e2">convert_to_string</a> (const ST &amp;sample)</td></tr>
+<tr class="separator:a68cb9f66b729e9ba8553b5392955f7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf5c07e8b12ed97d361654c40292bd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="utility_8h.html#a7bf5c07e8b12ed97d361654c40292bd2">provide_result</a> (const <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &amp;f, const std::vector&lt; <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &gt; &amp;full_t)</td></tr>
+<tr class="separator:a7bf5c07e8b12ed97d361654c40292bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Типы</h2>
+<a id="aa15148e3699896437d892107faa81997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa15148e3699896437d892107faa81997">&#9670;&nbsp;</a></span>full_sample_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> =  matrix&lt;double,8,1&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa45a56dc0744468fbd79dd26caabdbfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45a56dc0744468fbd79dd26caabdbfb">&#9670;&nbsp;</a></span>linear_kernel_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#aa45a56dc0744468fbd79dd26caabdbfb">linear_kernel_t</a> =  linear_kernel&lt;<a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada7d4f289bd49c35f91ecacbd11c8c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7d4f289bd49c35f91ecacbd11c8c20">&#9670;&nbsp;</a></span>ovo_trainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#ada7d4f289bd49c35f91ecacbd11c8c20">ovo_trainer</a> =  one_vs_one_trainer&lt;any_trainer&lt;<a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4189cbb5fcaa595a01a6506205b4392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4189cbb5fcaa595a01a6506205b4392">&#9670;&nbsp;</a></span>poly_kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#af4189cbb5fcaa595a01a6506205b4392">poly_kernel</a> =  polynomial_kernel&lt;<a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a51aa69abfee814389a8923c0477065ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51aa69abfee814389a8923c0477065ea">&#9670;&nbsp;</a></span>rbf_kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#a51aa69abfee814389a8923c0477065ea">rbf_kernel</a> =  radial_basis_kernel&lt;<a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3981fb82d176914272675f6ee50f973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3981fb82d176914272675f6ee50f973">&#9670;&nbsp;</a></span>sample_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> =  matrix&lt;double,7,1&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a68cb9f66b729e9ba8553b5392955f7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68cb9f66b729e9ba8553b5392955f7e2">&#9670;&nbsp;</a></span>convert_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ST &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;ST,<a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a>&gt;::value || std::is_same&lt;ST,<a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a>&gt;::value,std::string&gt;::type convert_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const ST &amp;&#160;</td>
+          <td class="paramname"><em>sample</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_a68cb9f66b729e9ba8553b5392955f7e2_icgraph.png" border="0" usemap="#utility_8h_a68cb9f66b729e9ba8553b5392955f7e2_icgraph" alt=""/></div>
+<map name="utility_8h_a68cb9f66b729e9ba8553b5392955f7e2_icgraph" id="utility_8h_a68cb9f66b729e9ba8553b5392955f7e2_icgraph">
+<area shape="rect" id="node2" href="utility_8h.html#a7bf5c07e8b12ed97d361654c40292bd2" title="provide_result" alt="" coords="188,5,303,32"/>
+<area shape="rect" id="node3" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="351,5,405,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a423f8df7cfdf8077af902ed9c589d625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a423f8df7cfdf8077af902ed9c589d625">&#9670;&nbsp;</a></span>get_distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double get_distance </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>lv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="utility_8h.html#aa3981fb82d176914272675f6ee50f973">sample_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>rv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_a423f8df7cfdf8077af902ed9c589d625_icgraph.png" border="0" usemap="#utility_8h_a423f8df7cfdf8077af902ed9c589d625_icgraph" alt=""/></div>
+<map name="utility_8h_a423f8df7cfdf8077af902ed9c589d625_icgraph" id="utility_8h_a423f8df7cfdf8077af902ed9c589d625_icgraph">
+<area shape="rect" id="node2" href="utility_8h.html#a7bf5c07e8b12ed97d361654c40292bd2" title="provide_result" alt="" coords="159,5,273,32"/>
+<area shape="rect" id="node4" href="gtest_8cpp.html#af33d28bbcab7033c00ee84e71bc70acb" title="TEST" alt="" coords="189,56,243,83"/>
+<area shape="rect" id="node3" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="321,5,376,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7bf5c07e8b12ed97d361654c40292bd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bf5c07e8b12ed97d361654c40292bd2">&#9670;&nbsp;</a></span>provide_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void provide_result </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>full_t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_cgraph.png" border="0" usemap="#utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_cgraph" alt=""/></div>
+<map name="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_cgraph" id="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_cgraph">
+<area shape="rect" id="node2" href="namespacenormolize.html#a491781729aa8848cf69a1bfca2d4a7b6" title="normolize::convert\l_to_sample" alt="" coords="168,5,312,47"/>
+<area shape="rect" id="node4" href="utility_8h.html#a423f8df7cfdf8077af902ed9c589d625" title="get_distance" alt="" coords="187,71,293,98"/>
+<area shape="rect" id="node5" href="utility_8h.html#a68cb9f66b729e9ba8553b5392955f7e2" title="convert_to_string" alt="" coords="173,122,307,149"/>
+<area shape="rect" id="node3" href="namespacenormolize.html#ae97b627622911dcdc43eb1d4ffe5b7a9" title="normolize::norm" alt="" coords="360,13,489,39"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_icgraph.png" border="0" usemap="#utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_icgraph" alt=""/></div>
+<map name="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_icgraph" id="utility_8h_a7bf5c07e8b12ed97d361654c40292bd2_icgraph">
+<area shape="rect" id="node2" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="168,5,223,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac8db8c96be81f12cf9be8115fafb1ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8db8c96be81f12cf9be8115fafb1ee2">&#9670;&nbsp;</a></span>split_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="utility_8h.html#aa15148e3699896437d892107faa81997">full_sample_type</a> split_data </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_cgraph.png" border="0" usemap="#utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_cgraph" alt=""/></div>
+<map name="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_cgraph" id="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_cgraph">
+<area shape="rect" id="node2" href="namespacenormolize.html#a57859d3e7a98243da55df3e88d56a0ab" title="normolize::replace\l_missed_data" alt="" coords="140,5,283,47"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_icgraph.png" border="0" usemap="#utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_icgraph" alt=""/></div>
+<map name="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_icgraph" id="utility_8h_ac8db8c96be81f12cf9be8115fafb1ee2_icgraph">
+<area shape="rect" id="node2" href="gtest_8cpp.html#a66dfea826b81cbd62f107a03cfdf64bb" title="TEST" alt="" coords="140,5,195,32"/>
+<area shape="rect" id="node3" href="rclss_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="140,56,195,83"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
