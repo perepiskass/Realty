@@ -24,13 +24,13 @@ configure_file(${CMAKE_SOURCE_DIR}/include/version.h.in ${CMAKE_SOURCE_DIR}/incl
 
 
 add_executable(rclst ${CMAKE_SOURCE_DIR}/source/rclst.cpp ${CMAKE_SOURCE_DIR}/source/arg_rclst.cpp)
-add_executable(points ${CMAKE_SOURCE_DIR}/source/create_points.cpp)
-add_executable(classification ${CMAKE_SOURCE_DIR}/source/multiclass_classification_ex.cpp)
+add_executable(rclss ${CMAKE_SOURCE_DIR}/source/rclss.cpp ${CMAKE_SOURCE_DIR}/source/arg_rclss.cpp)
+
 add_library(versionlib ${CMAKE_SOURCE_DIR}/source/version_lib.cpp)
 add_executable(gtest  ${CMAKE_SOURCE_DIR}/source/gtest.cpp)
 
 
-set_target_properties(rclst points classification versionlib gtest PROPERTIES
+set_target_properties(rclst rclss versionlib gtest PROPERTIES
 CXX_STANDARD 17
 CXX_STANDARD_REQUIRED ON
 )
@@ -38,12 +38,10 @@ CXX_STANDARD_REQUIRED ON
 target_include_directories(rclst
     PRIVATE "${CMAKE_SOURCE_DIR}/include" ${Boost_INCLUDE_DIRS}
 )
-target_include_directories(classification
-PRIVATE "${CMAKE_SOURCE_DIR}/include"
+target_include_directories(rclss
+    PRIVATE "${CMAKE_SOURCE_DIR}/include" ${Boost_INCLUDE_DIRS}
 )
-target_include_directories(points
-    PRIVATE "${CMAKE_SOURCE_DIR}/include"
-)
+
 target_include_directories(versionlib
     PRIVATE "${CMAKE_SOURCE_DIR}/include"
 )
@@ -51,13 +49,13 @@ target_include_directories(gtest
     PRIVATE "${CMAKE_SOURCE_DIR}/include"
 )
 
-target_link_libraries(points PRIVATE
-dlib::dlib
-)
-target_link_libraries(classification PRIVATE
-dlib::dlib
-)
+
 target_link_libraries(rclst PRIVATE
+${Boost_LIBRARIES}
+dlib::dlib
+versionlib
+)
+target_link_libraries(rclss PRIVATE
 ${Boost_LIBRARIES}
 dlib::dlib
 versionlib
@@ -65,6 +63,7 @@ versionlib
 target_link_libraries(gtest
 ${GTEST_LIBRARIES}
 ${CMAKE_THREAD_LIBS_INIT}
+dlib::dlib
 versionlib
 )
 
@@ -73,12 +72,10 @@ if (MSVC)
 target_compile_options(rclst PRIVATE
         /W4
 )
-target_compile_options(classification PRIVATE
-        /W4
+target_compile_options(rclss PRIVATE
+/W4
 )
-target_compile_options(points PRIVATE
-        /W4
-)
+
 target_compile_options(versionlib PRIVATE
         /W4
 )
@@ -89,12 +86,10 @@ else ()
     target_compile_options(rclst PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
-    target_compile_options(classification PRIVATE
+    target_compile_options(rclss PRIVATE
     -Wall -Wextra -pedantic -Werror
     )
-    target_compile_options(points PRIVATE
-    -Wall -Wextra -pedantic -Werror
-    )
+
     target_compile_options(versionlib PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
@@ -105,7 +100,7 @@ endif()
 
 # ----------------------------------------------------------------------
 
-install(TARGETS rclst RUNTIME DESTINATION bin)
+install(TARGETS rclst rclss RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
