@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.5)
 # НАЗНАЧАЕМ ИМЯ ПРОЕКТУ И УСТАНАВЛИВАЕМ НОМЕР ВЕРСИИ------------------------
 # если определена среда сборки Travis то выставляем номер сборки из Travis
 if($ENV{TRAVIS_BUILD_NUMBER})
-project(realty VERSION 1.2.$ENV{TRAVIS_BUILD_NUMBER})
+project(realty VERSION 1.1.$ENV{TRAVIS_BUILD_NUMBER})
 
 # если среда не найдена то ставим номер сборки указанный ниже
 else()
@@ -114,5 +114,5 @@ include(CPack)
 
 enable_testing()
 
-add_test(version_test_case gtest)
-add_test(utility_test_case gtest)
+add_test(version_test_case ./build/gtest)
+add_test(utility_test_case ./build/gtest)
